@@ -13,6 +13,8 @@ public class SimpleTest {
         $("[name=q]").pressEnter();
 //sadas
         $("#rcnt").shouldHave(Condition.text("selenide.org"));
+        $("#rcnt").shouldHave(Condition.text("selenide"));
+
         //Previous comment was commited to the main branch... this one is intended to remove the previous one.
     }
 }
