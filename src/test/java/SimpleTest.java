@@ -13,5 +13,7 @@ public class SimpleTest {
         $("[name=q]").pressEnter();
 //sadas
         $("#rcnt").shouldHave(Condition.text("selenide.org"));
+        // New comment for a new branch
     }
 }
+git
