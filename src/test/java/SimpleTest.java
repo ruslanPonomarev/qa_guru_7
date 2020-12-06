@@ -11,7 +11,7 @@ public class SimpleTest {
 
         $("[name=q]").setValue("Selenide");
         $("[name=q]").pressEnter();
-
+//sadas
         $("#rcnt").shouldHave(Condition.text("selenide.org"));
     }
 }
