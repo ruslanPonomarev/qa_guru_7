@@ -17,4 +17,16 @@ public class SimpleTest {
 
         //Previous comment was commited to the main branch... this one is intended to remove the previous one.
     }
+    
+     @Test
+        void selenideSearchTest() {
+            // Открыть yandex
+            open("https://yandex.ru");
+
+            // Ввести Selenide в поиска
+            $(byName("text")).setValue("Selenide").pressEnter();
+
+            // Проверить, что Selenide появился в результатах поиска
+            $("html").shouldHave(Condition.text("selenide.org"));
+        }
 }
